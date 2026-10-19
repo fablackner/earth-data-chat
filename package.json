@@ -1,0 +1,25 @@
+{
+  "name": "earth-data-chat",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "earth-data-chat: a web chat for Earth observation and natural hazard data from the earth-data-mcp server",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@ai-sdk/mcp": "^2.0.54",
+    "@ai-sdk/openai": "^4.0.71",
+    "@ai-sdk/react": "^4.0.147",
+    "ai": "^7.0.107",
+    "next": "^16.4.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-markdown": "^10.1.0"
+  }
+}
