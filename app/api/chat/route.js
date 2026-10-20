@@ -8,7 +8,7 @@ import {
 
 import { buildInstructions } from '@/lib/instructions';
 import { allTools } from '@/lib/mcp';
-import { model } from '@/lib/model';
+import { getModel } from '@/lib/model';
 
 export const maxDuration = 60;
 
@@ -17,7 +17,7 @@ export async function POST(req) {
   const { tools, instructions } = await allTools();
 
   const result = streamText({
-    model,
+    model: getModel(),
     instructions: buildInstructions(instructions),
     messages: await convertToModelMessages(messages),
     tools,
