@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from 'react';
 import Message from './Message';
 
 const SUGGESTIONS = [
+  'How is earth today?',
   'Biggest earthquakes in the last day?',
   'Any active red or orange disaster alerts?',
   'Is there a geomagnetic storm right now?',
